@@ -52,7 +52,11 @@ const Icon = styled.svg `
 
 `;
 
-const HiddenCheckbox = styled.input.attrs({ type: "checkbox" }) `
+const HiddenCheckbox = styled.input.attrs({
+
+    type: "checkbox",
+
+}) `
 
   border: 0;
 

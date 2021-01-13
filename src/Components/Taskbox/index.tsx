@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import styled from "styled-components";
+import styled, { AnyStyledComponent } from "styled-components";
 import PinIcon from "./PinIcon";
 import Checkbox from "./../Checkbox";
 
@@ -7,7 +7,7 @@ type Wrapper = {
   isPinned?: boolean;
   isCompleted?: boolean;
 };
-const TaskboxWrapper = styled.div<Partial<Wrapper>>`
+const TaskboxWrapper: AnyStyledComponent = styled.div<Partial<Wrapper>>`
   max-width: 720px;
   padding: 1rem;
   display: flex;
@@ -36,7 +36,7 @@ const TaskboxWrapper = styled.div<Partial<Wrapper>>`
     }
   }
 `;
-const Content = styled.div`
+const Content: AnyStyledComponent = styled.div`
   display: flex;
   align-items: center;
   p {

@@ -1,9 +1,9 @@
 import React, { FC } from "react";
 
-import styled from "styled-components";
+import styled, { AnyStyledComponent } from "styled-components";
 import Taskbox, { StatusInterface, TaskboxProps } from "../Taskbox";
 
-const ListWrapper = styled.div`
+const ListWrapper: AnyStyledComponent = styled.div`
   display: flex;
   flex-direction: column;
   padding: 1rem;
