@@ -7,7 +7,7 @@ type Wrapper = {
   isPinned?: boolean;
   isCompleted?: boolean;
 };
-const TaskboxWrapper: AnyStyledComponent = styled.div<Partial<Wrapper>>`
+const TaskboxWrapper: AnyStyledComponent = styled.div<Wrapper>`
   max-width: 720px;
   padding: 1rem;
   display: flex;

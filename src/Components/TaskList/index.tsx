@@ -18,7 +18,7 @@ const ListWrapper: AnyStyledComponent = styled.div`
 
 export type TaskListProps = {
   title?: string;
-  list: Array<TaskboxProps>;
+  list: Array<Omit<TaskboxProps, "onStatusChange">>;
   onChangeTaskItem?: (id: string, status: StatusInterface) => void;
   style?: object | {};
 };
@@ -31,9 +31,15 @@ const TaskList: FC<TaskListProps> = ({
   return (
     <ListWrapper style={style}>
       <h5>{title}</h5>
-      {list.map((obj, i) => (
-        <Taskbox key={i} {...obj} onStatusChange={onChangeTaskItem} />
-      ))}
+      {/* {list.map((obj, i) => (
+        <Taskbox
+          key={i}
+          id={obj.id}
+          status={obj.status}
+          label={obj.label}
+          onStatusChange={onChangeTaskItem}
+        />
+      ))} */}
     </ListWrapper>
   );
 };

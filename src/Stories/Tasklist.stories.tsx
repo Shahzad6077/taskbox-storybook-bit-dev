@@ -1,9 +1,10 @@
-import React, { FC, useState } from "react";
+import React, { useState } from "react";
+
 // also exported from '@storybook/react' if you can deal with breaking changes in 6.1
 import { Story, Meta } from "@storybook/react/types-6-0";
+import Tasklist, { TaskListProps } from "../Components/TaskList/index";
 
-import TaskList, { TaskListProps } from "./index";
-import { TaskboxProps } from "../Taskbox";
+import { TaskboxProps } from "../Components/Taskbox";
 const LIST: TaskboxProps[] = [
   { id: "123", label: "Pushups game on 23Aug", status: "DEFAULT" },
   { id: "456", label: "Leg game on 24Aug", status: "PINNED" },
@@ -11,8 +12,8 @@ const LIST: TaskboxProps[] = [
   { id: "235", label: "Chest game on 26Aug", status: "COMPLETED" },
 ];
 export default {
-  title: "Ui/TaskList",
-  component: TaskList,
+  title: "Ui/Tasklist",
+  component: Tasklist,
   args: {
     title: "Gym Taskbox",
   },
@@ -32,7 +33,7 @@ const Template: Story<TaskListProps> = (args) => {
       })
     );
   };
-  return <TaskList {...args} list={list} onChangeTaskItem={onChangeTaskItem} />;
+  return <Tasklist {...args} list={list} onChangeTaskItem={onChangeTaskItem} />;
 };
 
 export const Default = Template.bind({});

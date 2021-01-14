@@ -1,9 +1,7 @@
 import React, { FC } from "react";
 import styled, { AnyStyledComponent } from "styled-components";
 
-const CheckboxContainer: AnyStyledComponent = styled.div<
-  Partial<CheckboxProps>
->`
+const CheckboxContainer: AnyStyledComponent = styled.div<CheckboxProps>`
   display: inline-flex;
   vertical-align: middle;
 

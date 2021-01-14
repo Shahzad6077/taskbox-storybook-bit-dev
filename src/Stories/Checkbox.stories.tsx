@@ -1,8 +1,8 @@
-import React, { FC } from "react";
+import React from "react";
 // also exported from '@storybook/react' if you can deal with breaking changes in 6.1
 import { Story, Meta } from "@storybook/react/types-6-0";
 
-import Checkbox, { CheckboxProps } from "./index";
+import Checkbox, { CheckboxProps } from "../Components/Checkbox/index";
 
 export default {
   title: "Ui/Checkbox",
