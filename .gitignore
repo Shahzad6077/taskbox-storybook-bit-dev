@@ -2,6 +2,8 @@
 
 # dependencies
 /node_modules
+/path
+/storybook-static
 /.pnp
 .pnp.js
 

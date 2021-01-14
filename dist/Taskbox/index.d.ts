@@ -1,20 +1,12 @@
-import { FC } from "react";
-
-export declare type StatusInterface = "DEFAULT" | "PINNED" | "COMPLETED";
-
-export declare type TaskboxProps = {
-
-    id: string;
-
-    label: string;
-
-    status: StatusInterface;
-
-    onStatusChange?: (id: string, status: StatusInterface) => void;
-
-};
-
-declare const Taskbox: FC<TaskboxProps>;
+import Taskbox from '@bit/shahzad6077.taskbox.taskbox';
 
 export default Taskbox;
+
+import { StatusInterface } from '@bit/shahzad6077.taskbox.taskbox';
+
+export { StatusInterface };
+
+import { TaskboxProps } from '@bit/shahzad6077.taskbox.taskbox';
+
+export { TaskboxProps };
 

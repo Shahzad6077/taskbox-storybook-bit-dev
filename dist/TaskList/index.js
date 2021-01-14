@@ -2,6 +2,8 @@ import React from "react";
 
 import styled from "styled-components";
 
+import Taskbox from "../Taskbox";
+
 const ListWrapper = styled.div `
 
   display: flex;
@@ -30,7 +32,9 @@ const TaskList = ({ title, list, onChangeTaskItem, style, }) => {
 
     return (React.createElement(ListWrapper, { style: style },
 
-        React.createElement("h5", null, title)));
+        React.createElement("h5", null, title),
+
+        list.map((obj, i) => (React.createElement(Taskbox, { key: i, id: obj.id, status: obj.status, label: obj.label, onStatusChange: onChangeTaskItem })))));
 
 };
 

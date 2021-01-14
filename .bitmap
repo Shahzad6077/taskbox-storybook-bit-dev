@@ -14,7 +14,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "shahzad6077.taskbox/task-list@3.0.0": {
+    "shahzad6077.taskbox/task-list@3.0.1": {
         "files": [
             {
                 "relativePath": "src/Components/TaskList/index.tsx",
