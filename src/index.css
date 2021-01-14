@@ -26,3 +26,18 @@ code {
   padding: 0px;
   box-sizing: border-box;
 }
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header,
+h5 {
+  color: #f7f9fc;
+  margin-bottom: 1rem;
+}
+header {
+  margin: 0px;
+  margin-top: 1.5rem;
+}
