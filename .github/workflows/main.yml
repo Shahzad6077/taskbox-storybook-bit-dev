@@ -47,3 +47,9 @@ jobs:
       # Deploy Surge
       - name: Deploy React App to Surge
         run: surge ./build https://taskbox-shahzad.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+      # Rename the index.html file to 200.html
+      - name: Rename the index.html file to 200.html
+        run: sudo cp ./path/to/build/index.html ./path/to/build/200.html && sudo rm ./path/to/build/index.html
+      # Deploy Surge
+      - name: Deploy Storybook UI Taskbox App to Surge
+        run: surge ./path/to/build https://story-taskbox-shahzad.surge.sh --token ${{ secrets.SURGE_TOKEN }}

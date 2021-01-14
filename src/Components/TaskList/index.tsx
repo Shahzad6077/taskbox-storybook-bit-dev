@@ -31,7 +31,7 @@ const TaskList: FC<TaskListProps> = ({
   return (
     <ListWrapper style={style}>
       <h5>{title}</h5>
-      {/* {list.map((obj, i) => (
+      {list.map((obj, i) => (
         <Taskbox
           key={i}
           id={obj.id}
@@ -39,7 +39,7 @@ const TaskList: FC<TaskListProps> = ({
           label={obj.label}
           onStatusChange={onChangeTaskItem}
         />
-      ))} */}
+      ))}
     </ListWrapper>
   );
 };
